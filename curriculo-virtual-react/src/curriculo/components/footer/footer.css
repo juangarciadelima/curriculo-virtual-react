@@ -1,0 +1,7 @@
+.KamenRaider {
+    transition: text-weight 5ms ease;
+}
+
+.KamenRaider:hover {
+    font-weight: bolder;
+}
