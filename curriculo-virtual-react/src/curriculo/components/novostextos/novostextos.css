@@ -1,0 +1,10 @@
+.titulo{
+    text-align: center;
+}
+
+.A{
+    border-right: 5px dotted darkcyan;
+    border-top: 5px dotted darkcyan;
+    border-bottom: 5px dotted darkcyan;
+    
+}

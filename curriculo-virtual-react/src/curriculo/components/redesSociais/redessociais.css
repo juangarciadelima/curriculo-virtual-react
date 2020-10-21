@@ -1,0 +1,14 @@
+li{
+    list-style: none;
+}
+
+.tituloNadaImportante{
+    text-align: center;
+}
+
+.Coluna2{
+    width: 30%;
+    float:left;
+    background-color: dodgerblue;
+    color : white;
+    font-size : 14px;}

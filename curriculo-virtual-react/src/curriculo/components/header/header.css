@@ -1,4 +1,19 @@
 .header {
     font-style: italic;
-    
+    text-align : center;
+    background-color: aqua;
+    text-transform: uppercase;
+    font-style: italic;
+text-shadow: 2px 2px white
+}
+
+
+
+.Imagem{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    display: block;
 }

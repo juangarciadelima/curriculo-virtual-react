@@ -1,13 +1,12 @@
 import React from 'react'
 import './footer.css'
 
-function footer({text}){
+function Footer({textoDeBaixo}){
     return <>
-    <section>
-    <h2>Agradecimentos</h2>
-    <p>{text}</p>
+    <section className='Coluna1'>
+    <p className = 'KamenRaider'>{textoDeBaixo}</p>
     </section>
     </>
 }
 
-export default footer
+export default Footer

@@ -4,4 +4,12 @@
 
 .KamenRaider:hover {
     font-weight: bolder;
+    cursor: pointer;
 }
+
+.Coluna1{
+    width: 30%;
+    float:left;
+    background-color: darkturquoise;
+    color : white;
+    font-size : 14px;}

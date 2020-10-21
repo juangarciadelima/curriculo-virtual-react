@@ -1,3 +1,31 @@
-.textos {
-    font-style: italic;
+
+.Titulo{
+    text-align: center;
+    text-shadow: 2px 2px black;
+    color : white
 }
+
+.Coluna1{
+    width: 30%;
+    float:left;
+    background-color: darkturquoise;
+    color : white;
+    font-size : 14px;
+}
+
+p{
+    text-align: center;
+}
+
+
+.Ata{float: right;
+    width: 30%;
+    background-color :aqua;
+    font-style: italic;
+    transition: transform 2s ease;
+}
+
+    .Ata:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+    }
