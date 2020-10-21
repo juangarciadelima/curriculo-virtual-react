@@ -59,7 +59,7 @@ return(
     <RedesSociais Redes={curriculo.redesSociais} />
     <Estudos estudos={curriculo.estudos} />
     <Footer textoDeBaixo={curriculo.textodebaixo} />
-    <TextosNovos texto3 = {curriculo.texto3} texto4 = {curriculo.texto4} />
+    <TextosNovos texto1 = {curriculo.texto3} texto2 = {curriculo.texto4} />
     </>
 )}
 
