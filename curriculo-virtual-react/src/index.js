@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Curriculo from './curriculo/Curriculo'
+import App from './curriculo/components/app'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Curriculo />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
