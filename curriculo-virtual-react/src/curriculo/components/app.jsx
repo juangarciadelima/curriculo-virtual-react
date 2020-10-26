@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Curriculo from '../Curriculo'
+import Formulario from '../form'
 
 function App() {
     return <Router>
@@ -9,11 +10,11 @@ function App() {
             <Route path="/curriculo">
                 <Curriculo />
             </Route>
-            <Route path="/projetos">
-                <h1>Oi</h1>
+            <Route path="/projeto">
+                <Formulario />
             </Route>
         </Switch>
-        <footer> Adeus </footer>
+        <footer> Fim Da Tela!! </footer>
     </Router>
 }
 
