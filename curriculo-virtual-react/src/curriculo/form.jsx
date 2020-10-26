@@ -11,14 +11,14 @@ function Formulario() {
     
 
 
-    const [projeto, alteraProjeto] = useState([ok])
+    const [projeto, alteraProjeto] = useState(ok)
 
-    function ColocaNoLocalStorage(chave, valor) {
+    function colocaNoLocalStorage(chave, valor) {
         localStorage.setItem(chave, JSON.stringify(valor))
         
     }
      
-    function PegaDoLocalStorage(chave){
+    function pegaDoLocalStorage(chave){
         return JSON.parse(localStorage.getItem(chave))
     }
 
@@ -32,7 +32,7 @@ function Formulario() {
 
 
     function salvaPessoa() {
-        ColocaNoLocalStorage('usuarioc', projeto)
+        colocaNoLocalStorage(ok, projeto)
         ok.push(projeto)
 
     }
