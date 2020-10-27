@@ -5,7 +5,7 @@ import Formulario from '../form'
 
 function App() {
     return <Router>
-        <h1> Oi</h1>
+        <h1> Começo Da Tela</h1>
         <Switch>
             <Route path="/curriculo">
                 <Curriculo />
