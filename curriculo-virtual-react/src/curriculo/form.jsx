@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
 
+const PROJETOS_KEY = 'projetos'
 
 function Formulario() {
          
-    let ok = []
-    if(ok == null){
-        ok = []
-    } 
-
-    
-
-
-    const [projeto, alteraProjeto] = useState([ok])
+    const [projetos,alteraProjetos] =useState([])
+    const [projeto, alteraProjeto] = useState({})
 
     function ColocaNoLocalStorage(chave, valor) {
         localStorage.setItem(chave, JSON.stringify(valor))
@@ -32,10 +26,15 @@ function Formulario() {
 
 
     function salvaPessoa() {
-        ColocaNoLocalStorage('usuarioc', projeto)
-        ok.push(projeto)
+   const arrayComoString = localStorage.getItem(PROJETOS_KEY)
+   const arrayComoArray = JSON.parse(arrayComoString) || []
 
+   arrayComoArray.push(projeto)
+   alteraProjetos(projetos)
+      const a =JSON.stringify(arrayComoArray)
+      const b =  localStorage.setItem('projetos',a)
     }
+
     return <form>
         <input onChange={onChangeSupremo} type='text' name='nome' id="a" placeholder="Coloque O Nome Do Projeto"/>
         <input onChange={onChangeSupremo} type="text" name="descricao" id="b" placeholder="Descreva Seu Projeto"/>

@@ -5,6 +5,7 @@ import Textos from './components/textos/texts'
 import Estudos from './components/estudos/estudos'
 import Footer from './components/footer/footer'
 import TextosNovos from './components/novostextos/novostextos'
+import PegaDoLocalStorage from '../curriculo/form'
 
 
 function Curriculo() {
@@ -52,7 +53,7 @@ function Curriculo() {
         textodebaixo: 'Obrigado por terem visto meu currículo, até a próxima'
 
     })
-
+    const zap = JSON.parse(localStorage.getItem('projetos'))
     return (
         <>
             <Header nome={curriculo.nome} imagem={curriculo.imagem} />
@@ -61,6 +62,23 @@ function Curriculo() {
             <Estudos estudos={curriculo.estudos} />
             <Footer textoDeBaixo={curriculo.textodebaixo} />
             <TextosNovos texto1={curriculo.texto3} texto2={curriculo.texto4} />
+            <table>
+                <thead>
+                    <th>Nome</th>
+                    <th>Tecnologias</th>
+                    <th>Descricao</th>
+                </thead>
+                <tbody>
+                    {zap.map((p, index) => (
+                        <tr key={index}>
+                            <td>{p.nome}</td>
+                            <td>{p.tecnologias}</td>
+                            <td>{p.descricao}</td>
+                            </tr>
+
+                    ))}
+                </tbody>
+            </table>
 
         </>
     )
